@@ -1,0 +1,43 @@
+
+
+{% load static %}
+
+{% block title%}Blog {% endblock %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog Profissional</title>
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <img class="eu"   src="{% static 'public/eu.jpg' %}" alt="">
+        <h1 class="nome">Lanna Ávila</h1>
+        <p class="biografia">Olá! Sou Lanna Ávila e estudo no Instituto Federal do Rio Grande do Norte em pau
+            do ferros. Tenho 18 anos e pretendo finalizar o curso de informática e fazer faculdade de direito.
+            
+        </p>
+
+        <h2><a class="about"  href="{% url 'sobre' %}">Sobre mim</a></h2>
+        <ul>
+            {% for curso in cursos %}
+                <li><strong>{{ curso.nome }}</strong> - {{ curso.instituicao }}: {{ curso.descricao }}</li>
+            {% endfor %}
+        </ul>
+
+
+        <ul>
+            {% for interesse in interesses %}
+                <li>{{ interesse.nome }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

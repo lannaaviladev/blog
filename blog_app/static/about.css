@@ -1,0 +1,38 @@
+/* Estilos para about.html */
+
+/* Seção principal de "Sobre Mim" */
+body {
+    background-color: rgb(18, 21, 24);
+}
+
+.about2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 300%;
+}
+
+.texto1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 100%;
+}
+
+.texto2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 100%;
+}
+
+.texto3{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 100%;
+}
